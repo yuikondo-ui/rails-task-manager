@@ -1,0 +1,16 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.btn > a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+}

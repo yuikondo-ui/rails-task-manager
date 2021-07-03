@@ -1,0 +1,18 @@
+<header>
+  <h2><%= @task.title %></h2>
+</header>
+<body class="m-3">
+  <p class ="p-3 border bg-light"><%= @task.details %></p>
+
+  <button type="button" class="btn btn-primary"> <%= link_to "Edit this task", edit_task_path(@task) %> </button>
+  <button type="button" class="btn btn-danger">
+  <%= link_to "Delete #{@task.title}",
+              task_path(@task),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+  </button>
+  <div class="mt-3">
+    <%= link_to "Back", tasks_path %>
+  </div>
+</body>
+
